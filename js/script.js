@@ -79,10 +79,10 @@ group.add(particles);
 const simplex = new SimplexNoise();
 const pos = new THREE.Vector3();
 const palette = [
-  new THREE.Color("#C71585"),
-  new THREE.Color("#FFB6C1"),
-  new THREE.Color("#DB7093"),
-  new THREE.Color("#FF6699"),
+  new THREE.Color("#FF0000"),
+  new THREE.Color("#FF0000"),
+  new THREE.Color("#FF0000"),
+  new THREE.Color("#FF0000"),
 ];
 class SparkPoint {
   constructor() {
@@ -121,16 +121,16 @@ const beat = { a: 0 };
 gsap
   .timeline({
     repeat: -1,
-    repeatDelay: 0.3,
+    repeatDelay: 0.1,
   })
   .to(beat, {
-    a: 0.5,
+    a: 0.6,
     duration: 0.6,
     ease: "power2.in",
   })
   .to(beat, {
-    a: 0.0,
-    duration: 0.6,
+    a: 0,
+    duration: 0.5,
     ease: "power3.out",
   });
 
